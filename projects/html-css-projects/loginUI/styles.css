@@ -6,7 +6,7 @@
   align-items: center;
   background-color: rgb(138, 136, 136);
   background-image: url(images/nature.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -16,6 +16,8 @@
   min-height: 35%;
   border: 5px solid rgb(167, 206, 242);
   border-radius: 30px;
+  box-shadow: 5px 10px 0 rgba(39, 109, 115, 0.1);
+  padding: 10px;
 }
 
 h1 {
