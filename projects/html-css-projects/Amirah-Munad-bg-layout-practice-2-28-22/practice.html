@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+      <!-- practicing three column equal width -->
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries.
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <p>
+            Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <p>
+            Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints.
+          </p>
+        </div>
+        <!-- practicing two column equal width -->
+        <div class="col-sm-6">
+          <p>
+            Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p>
+            Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints.
+          </p>
+      </div>
+      <!-- practicing two column equal width medium size -->
+      <div class="col-large-6">
+        <p>
+          Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+        </p>
+      </div>
+      <div class="col-large-6">
+        <p>
+          Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints.
+        </p>
+
+    </div>
+    <!-- practicing Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it.  -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-8">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-4">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+    </div>
+
+    <!-- practice with variable width content -->
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-md-auto">
+        Variable width content
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+    <!-- For grids that are the same from the smallest of devices to the largest, use the .col and .col-* classes. Specify a numbered class when you need a particularly sized column; -->
+    <div class="container">
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">
+        <div class="col-8">col-5</div>
+        <div class="col-4">col-7</div>
+      </div>
+    </div>
+    <!-- flexbox alignment utilities to vertically align columns -->
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        </div>
+        <div class="row align-items-end"></div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="col">
+          One of three columns
+        </div>
+        <div class="row align-items-center">
+        <div class="col">
+          One of three columns
+        </div>
+      </div>
+    </div>
+<!-- for Breaking columns to a new line in flexbox requires a small hack: add an element with width: 100% wherever you want to wrap your columns to a new line  -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 col-sm-3">.col-4 .col-sm-3</div>
+    <div class="col-5 col-sm-3">.col-5 .col-sm-3</div>
+
+    <!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
+
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="background-color: light-grey">
+  <div class="container">
+  <a href="#" class="navbar-brand mx-10 h1">MailPod<img class="d-inline-block align-left "src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/uttf99dx2aejlse2eif9" width="50" height="50" >
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a href="#" class="nav-link active">
+        Home
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a href="#" class="nav-link">
+        Primary
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a href="#" class="nav-link">
+        social
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="collapse" id="navbarNav">
+  <div class="bg-dark p-4">
+    <h5 class="text-white h4">Collapsed content</h5>
+    <span class="text-muted">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+  </div>
+</nav>
+
+
+<div class="mb-1 p-1">
+<button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">COMPOSE</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div> <!--For button-->
+
+
+<div class="list-group" style="width: 500px">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <i class="bi bi-star"></i>
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small>And some small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+<!-- practice -->
+<div class="container p-0" style="width: 90px">
+  <div class="row item-container unread selected">
+      <div class="col-1 align-self-center">
+          <input type="checkbox" value="" checked style="font-size: 1rem;">
+      </div>
+      <div class="col-1">
+        <i class="bi bi-apple"></i>
+      </div>
+  </div>
+</div>
+
+<!-- practice -->
+      <h5 class="mb-1 me-5">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+</div>
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
