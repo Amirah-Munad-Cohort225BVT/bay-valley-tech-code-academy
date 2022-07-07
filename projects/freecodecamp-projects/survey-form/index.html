@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Survey-Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="box">
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Thank you for taking the course Responsive Web Design, please let us know how it helped you in your coding journey and how you want it to be in future.</p>
+
+    <form id="survey-form">
+
+      <div>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name" required="">
+      </div>
+
+    <div>
+      <label id="email-label" for="email">Email</label>    
+      <input type="email" id="email" class="form-control" placeholder="Enter your email" required="">
+    </div>
+
+    <div>
+      <label id="number-label" for="number">Course completion Date</label>
+      <input type="number" name="course-completion-date" id="number" min="10" max="99" class="form-control" placeholder="date">
+    </div>
+
+      <p>Which course content you like most?</p>
+      <select id="dropdown" name="course-content" class="form-control" required="">
+        <option value="html">Basic HTML and HTML5</option>
+        <option value="css">Basic CSS</option>
+        <option value="applied-visual-design">Applied Visual Design</option>
+
+        option value="applied-accessibility">Applied Accessibility</option>
+
+        <option value="responsive-webdesign-principals">Responsive Web Design Principles</option>
+
+        <option value="css-flexbox">CSS Flexbox</option>
+        <option value="css-grid">CSS Grid</option>            
+          </select>
+  <p>Which course content you wish to be included in the course?
+
+    <select id="dropdown" name="course-content" class="form-control" required="">
+
+    <option value="Bootstrap">Bootstrap</option>
+      <option value="Bootswatch">Bootswatch</option>
+      <option value="React">React</option>
+      <option value="JQuery">JQuery</option>
+      <option value="Html-canvas">Html-Canvas</option>
+      </select>
+
+<p>
+  What improvements you like to see in this course?
+</p>
+<div>
+    <input type="checkbox" id="coding-projects" name="interest" value="coding-projects" checked>
+    <label for="coding-projects">Coding Projects</label>
+  </div>
+  
+  <div>
+    <input type="checkbox" id="challenges" name="interest" value="challenges">
+    <label for="challenges">Challenges</label>
+   </div>
+
+   <div>
+    <input type="checkbox" id="get-help" name="interest" value="get-help">
+    <label for="get-help">Get Help Section</label>
+   </div>
+
+   <div>
+    <input type="checkbox" id="final-assessment" name="interest" value="final-assessment">
+    <label for="final-assessment">Final Assessment Projects</label>
+   </div>
+
+<div>
+    <input type="checkbox" id="video-tutorials" name="interest" value="video-tutorials">
+    <label for="video-tutorials">Video-tutorials</label>
+   </div>
+<p>
+  Any comments or suggestions?
+</p>
+<textarea name="textarea"
+   rows="5" cols="30"
+   minlength="10" maxlength="20">Leave your comments here</textarea>
+
+    <div class="form-group">
+          <p>Would you recommend Responsive Web Design course to a friend?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+    
+    <div>
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </div>
+
+    </form>
+</div>
+  </body>
+
+    
+
+    
