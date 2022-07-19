@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+  </head>
+  <body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg rounded border mt-2 border-2" style="background-color: rgb(217, 237, 244)">
+      
+    <!-- logo and brand name - CaliTrip -->
+      
+    <a class="navbar-brand ms-4" href="#">CaliTrip</a>
+      
+      <!-- Search bar -->
+          <form class="d-flex ms-5" role="search">
+            <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info me-5" type="submit"><i class="bi bi-search"></i></button>
+          </form>     
+          
+           <!-- navbar links --> 
+           <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+          
+         
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+
+            
+              <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn btn-light">Home</button>
+              </a>
+          
+            </ul>
+            </div>
+
+            <!-- dropdown for the Destinations button with the options of scenic places -->
+            <div class="dropdown ms-auto me-2 mb-2 mb-lg-0">
+            
+              <!-- <a class="nav-link" href="#"> this is not needed in dropdown, it was part of navbar code-->
+                <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Destinations</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <a class="dropdown-item" href="#">Beaches</a>
+                  <a class="dropdown-item" href="#">Caves</a>
+                  <a class="dropdown-item" href="#">Waterfalls</a>
+                  <a class="dropdown-item" href="#">Natural Wonders</a>
+                  <a class="dropdown-item" href="#">Landmarks</a>
+                  <a class="dropdown-item" href="#">Hikes</a>
+                </ul>
+              </a>
+            
+          </div>
+            
+          <!--  dropdown for the home button with the list of scenic drives -->
+            <div class="dropdown ms-auto me-2 mb-2 mb-lg-0">
+             
+                
+                  <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Drive</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">Pacific Coast Highway</a>
+                    <a class="dropdown-item" href="#">Highway 395</a>
+                   <a class="dropdown-item" href="#">LA to Las Vegas</a>
+                    <a class="dropdown-item" href="#">Route 66</a>
+                    <a class="dropdown-item" href="#">El Camino Real</a>
+                  </ul>
+                </a>
+             
+            </div>
+            <div class="dropdown ms-auto me-2 mb-2 mb-lg-0">
+              
+              <!-- dropdown for the National Parks button -->
+                
+                  <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">National Parks</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">Yosemite</a>
+                    <a class="dropdown-item" href="#">Sequoia-Kings Canyon</a>
+                    <a class="dropdown-item" href="#">Redwoods National-Park</a>
+                    <a class="dropdown-item" href="#">Lassen Volcanic</a>
+                    <a class="dropdown-item" href="#">Death DeathValleyNationalPark</a>
+                  <a class="dropdown-item" href="#">Channel Islands</a>
+                    <a class="dropdown-item" href="#">Red Rock Canyon Park</a>
+                  </ul>
+                </a>
+              
+            </div>
+            <div class="dropdown ms-auto me-2 mb-2 mb-lg-0">
+              
+              <!-- dropdown for the Cities button   -->
+                  <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Cities</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">San Francisco</a>
+                    <a class="dropdown-item" href="#">Sacramento</a>
+                    <a class="dropdown-item" href="#">LA</a>
+                    <a class="dropdown-item" href="#">San Diego</a>
+                    <a class="dropdown-item" href="#">Palm Springs</a>
+                    <a class="dropdown-item" href="#">Las Vegas</a>
+                  </ul>
+                </a>
+              
+            </div>
+
+            <div class="dropdown ms-auto me-2 mb-2 mb-lg-0">
+              
+              <!-- dropdown for the contact us button -->
+                  <button type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#"><select id="first-name" name="first-name1">
+                      <optgroup label="firstname">
+                      <option value="first-name">first-name</option>          
+                      </optgroup>
+                    </select></a>
+                    <a class="dropdown-item" href="#"><select id="last-name" name="last-name1">
+                      <optgroup label="lastname">
+                      <option value="last-name">last-name</option>                      
+                    </optgroup></select></a>
+                    <a class="dropdown-item" href="#"><select id="email" name="email1">
+                      <option value="your email">youremail@gmail.com</option>
+                      
+                    </select></a>
+                    <a class="dropdown-item" href="#">
+                      <textarea name="message1" id="message" required="true"> </textarea></a>
+                    <a class="dropdown-item" href="#"> <input class="btn btn-primary" type="submit" value="Submit"></a>
+                    
+                  </ul>
+                </a>
+                         </div>
+            
+            
+
+          </ul>
+        </div>
+      </div>             
+    </nav>       <!--Navbar ends here-->
+
+        <!-- large container(i.e it is 100% screen width on extra smll, small & medium but when hit breakpoint at large width of the container increases and it get series of max width as screen size increases)-->
+
+        <!-- Container for carousel, logo, and logo-caption -->
+
+      <div class="container-lg">
+      <div class="row justify-content-center mt-5 p-5">
+
+<!-- small column for logo image and side text-->
+        <div class="col-md-4 d-md-block display-6 text-start">
+          <div class="mask1"></div>
+          <img src="CaliTrip-logos/CaliTrip-logos_black.png" class="d-block w-100" alt="...">
+           <div class="textbelow-logo d-none d-md-block">
+             <h5>Must See natural wonders</h5>
+             <p>Explore California like a local with our insights to its natural wonders.</p>
+           </div>
+         </div>
+
+      <!-- Large column for carousel images -->
+      <div class="col-md-8 d-md-block">
+
+        <!-- carousel starts here -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Yosemite-Falls.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Yosemite National Park</h5>
+                <p>Yosemite National Park is magical with flowing waterfalls, giant granite rocks, backcountry trails, and views that you have only seen in your dreams</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/Burney-Falls.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>McArthur-Burney-Falls</h5>
+                <p>A Mesmerizing Waterfall in Northern California.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/Sequoia-National-Park.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sequoia-Kings Canyon National-Park</h5>
+                <p>World's largest Sequoia trees, Caves, Hikes, & Lodges.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/Mt.-Shasta.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mount Shasta</h5>
+                <p>The lone mountain sits at over 14,000 feet and can be seen from all over Siskiyou County.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bumpass-hell-2020-18.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bumpass-hell</h5>
+                <p>An amazing geothermal area that has massive mud boiling pots, sulfur steam vents and unique colored landscape.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/Mesquite-Flat-Dunes.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mesquite-Flat-Dunes</h5>
+                <p>Best Sunrise Spot in Death Valley along with Zabriskie Point and Dante’s View.</p>
+              </div>
+            </div>
+          </div> 
+
+          <!-- slider-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>        <!--carousel ends here--> 
+
+       </div>
+      </div>
+    </div>
+
+<!--container for video insertion -->
+<div class="container-lg">
+  <div class="row justify-content-start mt-3 p-3">
+
+    <!-- large column for video insertion -->
+    <div class="col-md-8 d-md-block"></div>
+
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/4zkPHO7f4NE" title="YouTube video" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-md-block display-6 text-start">
+      
+        <div class="video-caption d-none d-md-block">
+        <h5>30 Must See Natural Sites</h5>
+        <p>Nature lovers experience these California's natural wonders with us.</p>
+   </div>
+ </div>
+      
+  </div>
+</div>
+<!--  one big container for long picture with mask effect-->
+<div class="container-lg">
+  <div class="row justify-content-center mt-3 p-3">
+
+    <div class="col-md-12 d-md-block display-6 text-start">
+      <div class="mask2">
+      <img src="images/Laguna-Beach.jpg" class="d-block w-100" alt="..." height="600">
+        <div class="logo-caption d-none d-md-block">
+        <h5>Laguna-Beach</h5>
+        </div>
+    </div>
+ </div>
+</div>
+</div>
+
+
+<!--container for Three Small column for places to visit along with booking option -->
+    <div class="container-lg">
+      <div class="row justify-content-center mt-3 p-3">
+        <div class="col-md-4 d-md-block">
+
+        <div class="card" style="width: 18rem;">
+          <img src="images/mono-lake1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mono Lake with Tufas</h5>
+            <p class="card-text">Mono Lake is located at the bottom of a basin with Tufas or limestone columns that accumulated over thousands of years due to carbon accumulation and lack of outlet for water exit.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 d-md-block">
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/crowley-lake-columns-14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">crowley-lake-columns</h5>
+              <p class="card-text">Mysterious Crowley Lake Columns are not easy to get to, but we can offer our help .</p>
+              <a href="#" class="btn btn-primary">Go in Summer</a>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-4 d-md-block">
+
+            <div class="card" style="width: 18rem;">
+              <img src="images/painted-cave-santa-cruz-island-5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">painted-cave-santa-cruz-island</h5>
+                <p class="card-text">Painted Cave is a sea cave on Santa Cruz Island in Channel Islands National Park, is one of the largest sea caves in the world, only accessible via boat ride.</p>
+                <a href="#" class="btn btn-primary">Book Boat Ride</a>
+              </div>
+            </div>
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- container for image with overlay effect with text on top of image, and for contact form -->
+  <div class="container-lg">
+    <div class="row mt-3 p-3">
+      <div class="col-md-8 d-md-block">
+
+        <div class="card bg-dark text-white">
+          <img src="images/Artists-Palette DeathValleyNationalPark.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Artists-Palette DeathValley NationalPark</h5>
+            <p class="card-text">Artist’s Drive is located off Badwater Road, north of Devil’s Golf Course and south of Furnace Creek.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-4" text-center="" style="background-color: whitesmoke">
+              
+              
+        <div class="card" style="width: 20rem;">
+             <div class="card-body">
+
+              <h4>Contact</h4>
+              <p>Contact us at
+                <br> <br>CaliTrip@gmail.com 
+                
+              </p><p> Or connect with us on Linked In at 
+                <br><br>
+                  https://www.linkedin.com/in/CaliTrip/</p>
+                          
+              <p> Or get in touch at Twitter<br><br>
+                  https://twitter.com/CaliTrip</p>
+
+              <h4>"Leave a Message"</h4>
+
+        <form id="form" name="leave_a_message">
+              
+        <label for="first-name">First Name:</label>        
+               
+        <select id="first-name" name="first-name1">
+          <optgroup label="firstname">
+          <option value="first-name">first-name</option>          
+          </optgroup>
+        </select>
+        <br>
+    
+        <label for="last-name"> Last Name:</label> 
+                
+        <select id="last-name" name="last-name1">
+          <optgroup label="lastname">
+          <option value="last-name">last-name</option>
+          
+        </optgroup></select>
+        <br>
+        <br>
+         <label for="email"> Email:</label> 
+        <!-- <input type="email" name="email" id="email" required="true"> </input> --> 
+        <select id="email" name="email1">
+          <option value="your email">youremail@gmail.com</option>
+          
+        </select>
+        <br>
+        <br>
+        <label for="message">Message</label>
+        <textarea name="message1" id="message" required="true"> </textarea>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer jumbotron mt-1 p-1 rounded">
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-3 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-dark">© Copyright; 2022 CaliTrip </span>
+      </div>
+
+      <div class="social-media nav col-md-4 justify-content-end list-unstyled d-flex">
+
+          <a href="https://www.facebook.com/CaliTrip.5/" target="_blank "> <i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+
+          <a href="https://www.twitter.com/CaliTrip" target="_blank"><i class="bi bi-twitter" style="font-size: 2rem;"></i></a>
+
+          <a href="https://www.linkedin.com/in/CaliTrip/" target="_blank"> <i class="bi bi-linkedin" style="font-size: 2rem;"></i></a>
+
+          <a href="https://www.youtube.com/channel/UCX-QFksaIM4rcrjvjhlqf5g" target="_blank"><i class="bi bi-youtube" style="font-size: 2rem;"></i></a>
+
+          <a href="https://www.slack.com" target="_blank"><i class="bi bi-slack" style="font-size: 2rem;"></i></a>
+
+    </footer>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        
+      </body>
+    </html>

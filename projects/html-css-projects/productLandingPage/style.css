@@ -1,0 +1,58 @@
+body{
+    margin-top: 2%;
+    padding: 0%;
+}
+
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+}
+
+.my-row {
+    border: 1px solid rgb(210, 209, 209)
+    height: 300px;
+}
+
+.my-col {
+    border: 1px solid rgb(210, 209, 209)
+}
+
+.inbox-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.inbox-menu-item{
+    padding: 0.5rem 0.4rem;
+    margin: 0.5rem 0;
+}
+
+.email-list{
+    padding: 0.3rem 0.4rem;
+    margin: 0.3rem 0; 
+}
+
+
+.ratio-16x9{
+    width: 850px;
+    height: 520px;
+    margin: 0 auto;
+}
+
+/* .ratio-16x9 {
+    @include media-breakpoint-up(md) {
+      --bs-aspect-ratio: 50%; // 2x1
+    }
+  } */
+  /* .mask1 {
+    -webkit-mask-image: url(CaliTrip-logos/CaliTrip-logos_black.png);
+    mask-image: url(CaliTrip-logos/CaliTrip-logos_black.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  } */
+
+  .mask2 {
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  }
